@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+    <div id="container-login"><!--Div com container-login para ficar no meio da tela-->
+        <h1 id="h1-login"><!--login para ficar ao lado de cima-->
+            Login
+        </h1>
+        <form id="login"><!--parte do formulario para nome e senha e se a pessoa esqueceu sua senha-->
+            <label for="nomes">Nome</label>
+            <input type="text" name="nomes" id="nomes" placeholder="Digite seu nome" required><!--required é obrigatória a responder-->
+            <label for="senha">Senha</label>
+            <input type="password" name="name" id="senha" placeholder="Digite sua senha" required>
+        </form>
+
+        <!--botao fora do form para quando carregar e tiver o nome ousenha errado ele não precisar colocar tudo denovo-->
+
+        <button type="submit" onclick="logar()" value="Entrar" id="btn-login">
+        <span></span>
+        <span></span>
+        <span></span><!--Quatro span para gerar um ser efeito-->
+        <span></span>
+        <a class="botao" href="index.html">Entrar</a><!--Href local que vai ta entrando-->
+        </button>
+
+        <div id="registro">
+            <p>Ainda não tem cadastro?</p>
+            <button><a class="botao" href="login.html">Fazer cadastro</button></a>
+        </div>
+
+    </div>  
+
+</body>
+</html>
